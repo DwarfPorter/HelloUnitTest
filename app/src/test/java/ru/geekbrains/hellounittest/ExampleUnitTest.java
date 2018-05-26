@@ -68,31 +68,4 @@ public class ExampleUnitTest {
         assertEquals(expected, builderHello.get(24));
         assertEquals(expected, builderHello.get(2));
     }
-
-    public class PhrasesStub implements Phrases{
-        @Override
-        public String getMorning() {
-            return "Доброе утро!";
-        }
-
-        @Override
-        public String getAfternoon() {
-            return "Добрый день!";
-        }
-
-        @Override
-        public String getEvening() {
-            return "Добрый вечер!";
-        }
-
-        @Override
-        public String getNight() {
-            return "Доброй ночи!";
-        }
-
-        @Override
-        public String getHello() {
-            return "Привет мир!";
-        }
-    }
 }
