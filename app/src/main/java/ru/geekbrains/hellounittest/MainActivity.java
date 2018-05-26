@@ -6,15 +6,40 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Phrases {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase(this);
         TextView greet = findViewById(R.id.Greet);
         greet.setText(builderHello.get(Calendar.getInstance().get(Calendar.HOUR_OF_DAY)));
+    }
+
+    @Override
+    public String getMorning() {
+        return getResources().getString(R.string.Morning);
+    }
+
+    @Override
+    public String getAfternoon() {
+        return getResources().getString(R.string.Afternoon);
+    }
+
+    @Override
+    public String getEvening() {
+        return getResources().getString(R.string.Evening);
+    }
+
+    @Override
+    public String getNight() {
+        return getResources().getString(R.string.Night);
+    }
+
+    @Override
+    public String getHello() {
+        return getResources().getString(R.string.Greet);
     }
 }

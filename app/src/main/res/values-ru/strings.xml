@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Greet">Привет мир!</string>
+    <string name="Morning">Доброе утро!</string>
+    <string name="Afternoon">Добрый день!</string>
+    <string name="Evening">Добрый вечер!</string>
+    <string name="Night">Доброй ночи!</string>
+</resources>

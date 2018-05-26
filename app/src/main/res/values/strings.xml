@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HelloUnitTest</string>
     <string name="Greet">Hello World!</string>
+    <string name="Morning">Good morning!</string>
+    <string name="Afternoon">Good afternoon!</string>
+    <string name="Evening">Good evening!</string>
+    <string name="Night">Good night!</string>
 </resources>
