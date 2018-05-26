@@ -15,4 +15,18 @@ public class ExampleUnitTest {
         BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
         assertEquals("Привет мир!", builderHello.get());
     }
+
+    @Test
+    public void BuilderGreetingPhrase_getMorning_test(){
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        assertEquals("Доброе утро!", builderHello.get(3));
+        assertEquals("Доброе утро!", builderHello.get(11));
+    }
+
+    @Test
+    public void BuilderGreetingPhrase_getEvening_test(){
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        assertEquals("Добрый вечер!", builderHello.get(17));
+        assertEquals("Добрый вечер!", builderHello.get(23));
+    }
 }
