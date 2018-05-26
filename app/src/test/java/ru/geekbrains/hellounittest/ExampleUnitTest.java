@@ -11,7 +11,8 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void BuilderGreetingPhrase_get_test(){
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        assertEquals("Привет мир!", builderHello.get());
     }
 }
