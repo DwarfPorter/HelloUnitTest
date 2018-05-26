@@ -19,14 +19,34 @@ public class ExampleUnitTest {
     @Test
     public void BuilderGreetingPhrase_getMorning_test(){
         BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
-        assertEquals("Доброе утро!", builderHello.get(3));
-        assertEquals("Доброе утро!", builderHello.get(11));
+        String expected = "Доброе утро!";
+        assertEquals(expected, builderHello.get(3));
+        assertEquals(expected, builderHello.get(11));
     }
 
     @Test
     public void BuilderGreetingPhrase_getEvening_test(){
         BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
-        assertEquals("Добрый вечер!", builderHello.get(17));
-        assertEquals("Добрый вечер!", builderHello.get(23));
+        String expected = "Добрый вечер!";
+        assertEquals(expected, builderHello.get(17));
+        assertEquals(expected, builderHello.get(23));
     }
+
+    @Test
+    public void BuilderGreetingPhrase_getAfternoon_test(){
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        String expected = "Добрый день!";
+        assertEquals(expected, builderHello.get(12));
+        assertEquals(expected, builderHello.get(16));
+    }
+
+    @Test
+    public void BuilderGreetingPhrase_getNight_test(){
+        BuilderGreetingPhrase builderHello = new BuilderGreetingPhrase();
+        String expected = "Доброй ночи!";
+        assertEquals(expected, builderHello.get(0));
+        assertEquals(expected, builderHello.get(24));
+        assertEquals(expected, builderHello.get(2));
+    }
+
 }

@@ -8,6 +8,10 @@ public class BuilderGreetingPhrase {
     public String get(int hour){
         if (hour >= 3 && hour <= 11)
             return "Доброе утро!";
-        return "Добрый вечер!";
+        if (hour >=17 && hour <= 23)
+            return "Добрый вечер!";
+        if (hour >=12 && hour <= 16)
+            return "Добрый день!";
+        return "Доброй ночи!";
     }
 }
