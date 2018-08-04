@@ -20,7 +20,7 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
+        assertEquals(3,2);
         assertEquals("ru.geekbrains.hellounittest", appContext.getPackageName());
     }
 }
