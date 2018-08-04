@@ -67,6 +67,6 @@ public class ExampleUnitTest {
         assertEquals(expected, builderHello.get(0));
         assertEquals(expected, builderHello.get(24));
         assertEquals(expected, builderHello.get(2));
-        assertEquals(2, 2);
+        assertEquals(5, 2);
     }
 }
