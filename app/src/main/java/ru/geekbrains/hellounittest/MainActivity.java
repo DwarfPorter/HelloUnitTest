@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class MainActivity extends AppCompatActivity implements Phrases {
+public class1 MainActivity extends AppCompatActivity implements Phrases {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
